@@ -1,0 +1,78 @@
+{
+    "home": {
+      "welcome": "Bienvenido a la Plataforma de Reclutamiento",
+      "selectRole": "Seleccione su rol para continuar",
+      "candidateButton": "Soy un Candidato",
+      "recruiterButton": "Soy un Reclutador",
+      "needHelp": "¿Necesita ayuda?",
+      "contactSupport": "Contactar al soporte"
+    },
+    "form": {
+      "title": "Formulario de Candidatura",
+      "fullName": "Nombre Completo",
+      "nameRequired": "Por favor ingrese su nombre",
+      "nameHolder": "Ingrese su nombre completo",
+      "email": "Correo Electrónico",
+      "emailRequired": "Por favor ingrese un correo electrónico válido",
+      "emailHolder": "Ingrese su correo electrónico",
+      "phone": "Teléfono",
+      "phoneRequired": "Por favor ingrese su número de teléfono",
+      "phoneHolder": "Ingrese su número de teléfono",
+      "positionLabel": "Puesto Solicitado",
+      "positionRequired": "Por favor seleccione un puesto",
+      "positionHolder": "Seleccione un puesto",
+      "experienceLabel": "Nivel de Experiencia",
+      "experienceRequired": "Por favor seleccione su nivel de experiencia",
+      "experienceHolder": "Seleccione su nivel de experiencia",
+      "resumeLabel": "Currículum",
+      "resumeRequired": "Por favor suba su currículum",
+      "uploadButton": "Haga clic para subir su currículum",
+      "previousButton": "Anterior",
+      "submitButton": "Enviar",
+      "submitSuccess": "¡Su solicitud ha sido enviada con éxito!",
+      "positions": {
+        "frontend": "Desarrollador Frontend",
+        "backend": "Desarrollador Backend",
+        "fullstack": "Desarrollador Full Stack",
+        "devops": "Ingeniero DevOps"
+      },
+      "experience": {
+        "entry": "Nivel de Entrada (0-2 años)",
+        "mid": "Nivel Medio (3-5 años)",
+        "senior": "Senior (5+ años)",
+        "lead": "Líder (8+ años)"
+      }
+    },
+    "recruiters": {
+      "title": "Reclutador - Lista de Candidatos",
+      "goBackButton": "Volver",
+      "viewDetails": "Ver Detalles",
+      "columns": {
+        "name": "Nombre",
+        "email": "Correo",
+        "phone": "Teléfono",
+        "action": "Acción"
+      }
+    },
+    "candidateDetails": {
+      "title": "Detalles del Candidato",
+      "notFound": "Candidato no encontrado.",
+      "returnToList": "Volver a la Lista",
+      "goBackButton": "Volver a la Lista de Reclutadores",
+      "viewResume": "Ver Currículum",
+      "notProvided": "No proporcionado",
+      "fields": {
+        "email": "Correo Electrónico",
+        "phone": "Teléfono",
+        "position": "Puesto",
+        "experience": "Nivel de Experiencia",
+        "resume": "Currículum"
+      },
+      "positions": {
+        "frontend": "Desarrollador Frontend",
+        "backend": "Desarrollador Backend",
+        "fullstack": "Desarrollador Full Stack",
+        "devops": "Ingeniero DevOps"
+      }
+    }
+  }

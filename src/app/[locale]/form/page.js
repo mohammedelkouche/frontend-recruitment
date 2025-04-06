@@ -2,7 +2,7 @@
 import { Form, Input, Button, Select, Upload, message } from "antd";
 import { UploadOutlined } from "@ant-design/icons";
 import { useDispatch } from "react-redux";
-import { addCandidate } from "../redux/candidatesSlice";
+import { addCandidate } from "../../redux/candidatesSlice";
 import { useRouter } from "next/navigation";
 
 export default function CandidateForm() {

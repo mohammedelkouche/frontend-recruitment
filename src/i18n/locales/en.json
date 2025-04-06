@@ -1,0 +1,78 @@
+{
+    "home": {
+      "welcome": "Welcome to the Recruitment Platform",
+      "selectRole": "Select your role to continue",
+      "candidateButton": "I am a Candidate",
+      "recruiterButton": "I am a Recruiter",
+      "needHelp": "Need help?",
+      "contactSupport": "Contact support"
+    },
+    "form": {
+      "title": "Candidate Form",
+      "fullName": "Full Name",
+      "nameRequired": "Please enter your name",
+      "nameHolder": "Enter your full name",
+      "email": "Email",
+      "emailRequired": "Please enter a valid email",
+      "emailHolder": "Enter your email",
+      "phone": "Phone",
+      "phoneRequired": "Please enter your phone number",
+      "phoneHolder": "Enter your phone number",
+      "positionLabel": "Position Applied For",
+      "positionRequired": "Please select a position",
+      "positionHolder": "Select a position",
+      "experienceLabel": "Experience Level",
+      "experienceRequired": "Please select your experience level",
+      "experienceHolder": "Select your experience level",
+      "resumeLabel": "Resume/CV",
+      "resumeRequired": "Please upload your resume",
+      "uploadButton": "Click to Upload Resume/CV",
+      "previousButton": "Previous",
+      "submitButton": "Submit",
+      "submitSuccess": "Your application was submitted successfully!",
+      "positions": {
+        "frontend": "Frontend Developer",
+        "backend": "Backend Developer",
+        "fullstack": "Full Stack Developer",
+        "devops": "DevOps Engineer"
+      },
+      "experience": {
+        "entry": "Entry Level (0-2 years)",
+        "mid": "Mid-Level (3-5 years)",
+        "senior": "Senior (5+ years)",
+        "lead": "Lead (8+ years)"
+      }
+    },
+    "recruiters": {
+      "title": "Recruiter - Candidate List",
+      "goBackButton": "Go Back",
+      "viewDetails": "View Details",
+      "columns": {
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone",
+        "action": "Action"
+      }
+    },
+    "candidateDetails": {
+      "title": "Candidate Details",
+      "notFound": "Candidate not found.",
+      "returnToList": "Return to List",
+      "goBackButton": "Go Back to Recruiter List",
+      "viewResume": "View Resume",
+      "notProvided": "Not provided",
+      "fields": {
+        "email": "Email",
+        "phone": "Phone",
+        "position": "Position",
+        "experience": "Experience Level",
+        "resume": "Resume"
+      },
+      "positions": {
+        "frontend": "Frontend Developer",
+        "backend": "Backend Developer",
+        "fullstack": "Full Stack Developer",
+        "devops": "DevOps Engineer"
+      }
+    }
+  }
