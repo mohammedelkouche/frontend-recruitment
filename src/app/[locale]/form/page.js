@@ -2,12 +2,14 @@
 import { Form, Input, Button, Select, Upload, message } from "antd";
 import { UploadOutlined } from "@ant-design/icons";
 import { useDispatch } from "react-redux";
-import { addCandidate } from "../../redux/candidatesSlice";
+import { addCandidate } from "../../../app/redux/candidatesSlice";
 import { useRouter } from "next/navigation";
+import { useTranslation } from "../../../i18n/I18nProvider";
 
 export default function CandidateForm() {
   const dispatch = useDispatch();
   const router = useRouter();
+  const { t, locale } = useTranslation();
 
   const onFinish = (values) => {
     const { resume, experienceLevel, ...rest } = values;
@@ -18,83 +20,84 @@ export default function CandidateForm() {
       : null;
 
     dispatch(addCandidate({ ...rest, resume: fileUrl, experienceLevel }));
-    message.success("Your application was submitted successfully!", 3);
+    message.success(t('form.submitSuccess'), 3);
   };
 
   const goBack = () => {
-    router.push("/");
+    // Include the current locale in the navigation path
+    router.push(`/${locale}`);
   };
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen p-6 bg-gray-100">
       <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-lg">
         <h2 className="text-2xl font-semibold text-center mb-6 text-blue-600">
-          Candidate Form
+          {t('form.title')}
         </h2>
 
         <Form layout="vertical" onFinish={onFinish}>
           <Form.Item
-            label="Full Name"
+            label={t('form.fullName')}
             name="name"
-            rules={[{ required: true, message: "Please enter your name" }]}
+            rules={[{ required: true, message: t('form.nameRequired') }]}
           >
-            <Input placeholder="Enter your full name" />
+            <Input placeholder={t('form.nameHolder')} />
           </Form.Item>
 
           <Form.Item
-            label="Email"
+            label={t('form.email')}
             name="email"
             rules={[
-              { required: true, type: "email", message: "Please enter a valid email" },
+              { required: true, type: "email", message: t('form.emailRequired') },
             ]}
           >
-            <Input placeholder="Enter your email" />
+            <Input placeholder={t('form.emailHolder')} />
           </Form.Item>
 
           <Form.Item
-            label="Phone"
+            label={t('form.phone')}
             name="phone"
-            rules={[{ required: true, message: "Please enter your phone number" }]}
+            rules={[{ required: true, message: t('form.phoneRequired') }]}
           >
-            <Input placeholder="Enter your phone number" />
+            <Input placeholder={t('form.phoneHolder')} />
           </Form.Item>
 
           <Form.Item
-            label="Position Applied For"
+            label={t('form.positionLabel')}
             name="position"
-            rules={[{ required: true, message: "Please select a position" }]}
+            rules={[{ required: true, message: t('form.positionRequired') }]}
           >
             <Select
-              placeholder="Select a position"
+              placeholder={t('form.positionHolder')}
               options={[
-                { value: "frontend", label: "Frontend Developer" },
-                { value: "backend", label: "Backend Developer" },
-                { value: "fullstack", label: "Full Stack Developer" },
-                { value: "devops", label: "DevOps Engineer" },
+                { value: "frontend", label: t('form.positions.frontend') },
+                { value: "backend", label: t('form.positions.backend') },
+                { value: "fullstack", label: t('form.positions.fullstack') },
+                { value: "devops", label: t('form.positions.devops') },
               ]}
             />
           </Form.Item>
 
           <Form.Item
-            label="Experience Level"
+            label={t('form.experienceLabel')}
             name="experienceLevel"
-            rules={[{ required: true, message: "Please select your experience level" }]}
+            rules={[{ required: true, message: t('form.experienceRequired') }]}
           >
             <Select
-              placeholder="Select your experience level"
+              placeholder={t('form.experienceHolder')}
               options={[
-                { value: "entry", label: "Entry Level (0-2 years)" },
-                { value: "mid", label: "Mid-Level (3-5 years)" },
-                { value: "senior", label: "Senior (5+ years)" },
-                { value: "lead", label: "Lead (8+ years)" },
+                { value: "entry", label: t('form.experience.entry') },
+                { value: "mid", label: t('form.experience.mid') },
+                { value: "senior", label: t('form.experience.senior') },
+                { value: "lead", label: t('form.experience.lead') },
               ]}
             />
           </Form.Item>
 
           <Form.Item
             name="resume"
-            label="Resume/CV"
-            rules={[{ required: true, message: "Please upload your resume" }]}
+            label={t('form.resumeLabel')}
+            rules={[{ required: true, message: t('form.resumeRequired') }]}
             valuePropName="fileList"
             getValueFromEvent={(e) => e?.fileList}
           >
@@ -108,7 +111,7 @@ export default function CandidateForm() {
                 icon={<UploadOutlined />}
                 className="rounded-md w-full border-dashed border-2 p-6 flex items-center justify-center hover:text-blue-500 hover:border-blue-500"
               >
-                Click to Upload Resume/CV
+                {t('form.uploadButton')}
               </Button>
             </Upload>
           </Form.Item>
@@ -116,10 +119,10 @@ export default function CandidateForm() {
           {/* Submit Button */}
           <div className="flex justify-between">
             <Button onClick={goBack} className="mr-4">
-              Previous
+              {t('form.previousButton')}
             </Button>
             <Button type="primary" htmlType="submit">
-              Submit
+              {t('form.submitButton')}
             </Button>
           </div>
         </Form>
