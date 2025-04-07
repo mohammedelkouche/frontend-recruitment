@@ -87,15 +87,13 @@ Open http://localhost:3000 in your browser to see the app in action.
   └── uml/
        ├── use-case-diagram.png
        ├── class-diagram.png
-       ├── sequence-diagram.png
-       └── component-diagram.png
 ```
 
 ### Use Case Diagram
-![Use Case Diagram](./docs/uml/use-case-diagram.png)
+![Use Case Diagram](./docs/uml/use-case-diagram.drawio.png)
 
 ### Class Diagram
-![Class Diagram](./docs/uml/class-diagram.png)
+![Class Diagram](./docs/uml/class-diagram.drawio.png)
 
 
 
