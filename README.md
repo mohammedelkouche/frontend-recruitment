@@ -67,7 +67,7 @@ To run the project locally:
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/yourusername/recruitment-platform.git
+git@github.com:mohammedelkouche/frontend-recruitment.git
 cd recruitment-platform
 
 # 2. Install dependencies
