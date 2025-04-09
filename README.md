@@ -51,6 +51,10 @@ src/
 │       ├── fr.json
 │       └── es.json
 └── middleware.js
+/docs
+  └── uml/
+       ├── use-case-diagram.png
+       ├── class-diagram.png
 ```
 
 
