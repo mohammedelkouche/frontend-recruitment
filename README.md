@@ -9,7 +9,6 @@ A multilingual recruitment web app built with **Next.js 14**, designed to stream
 ### Candidate Side
 - Fill in a complete application form with personal info and resume upload
 - Multilingual support (EN, FR, ES)
-- Fully responsive design
 
 ### Recruiter Side
 - Browse all candidate applications in a sortable list
